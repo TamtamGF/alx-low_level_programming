@@ -38,7 +38,7 @@ char **strtow(char *str)
 		if (!c[current_word])
 		{
 			while (current_word-- >= 0)
-				free(a[current_word]);
+				free(c[current_word]);
 			free(c);
 			return (NULL);
 		}
@@ -47,5 +47,5 @@ char **strtow(char *str)
 		c[current_word++][n] = '\0';
 	}
 	c[word_count] = NULL;
-	return (a);
+	return (c);
 }
