@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - a program that multiplies two numbers.
+ * main -  a program that multiplies two numbers.
  * @argc: arguement count
  * @argv: arguement array
  * Return: 0
@@ -10,7 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, num3;
+	int num1;
+	int num2;
+	int result;
 
 	if (argc != 3)
 	{
